@@ -18,7 +18,6 @@ import { CursosGuard } from './guards/cursos.guard';
 //import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 //import { CursosModule } from './cursos/cursos.module';
 //import { AlunosComponent } from './alunos/alunos.component';
-//import { AlunosModule } from './alunos/alunos.module';
 
 @NgModule({
   declarations: [
