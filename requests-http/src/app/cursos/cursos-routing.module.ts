@@ -5,6 +5,10 @@ import { CursosListaComponent } from './cursos-lista/cursos-lista.component';
 const routes: Routes = [
   { path: '',
     component: CursosListaComponent
+  },
+  {
+    path: 'rxjs-poc',
+    loadChildren: './unsubscribe-rxjs/unsubscribe-rxjs.module#UnsubscribeRxjsModule'
   }
 ];
 
