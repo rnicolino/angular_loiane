@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnDestroy, OnInit } from '@angular/core';
 import { EnviarValorService } from '../enviar-valor.service';
 import { tap } from 'rxjs/operators';
 
@@ -10,7 +10,7 @@ import { tap } from 'rxjs/operators';
     </app-poc-base>
   `
 })
-export class PocAsyncComponent implements OnInit {
+export class PocAsyncComponent implements OnInit, OnDestroy {
 
   nome = 'Componente com async';
   valor: string = "";
@@ -18,7 +18,12 @@ export class PocAsyncComponent implements OnInit {
   constructor(private service: EnviarValorService) { }
 
   ngOnInit() {
-
+    this.service.getValor()
+    .pipe(tap(v => console.log(this.nome, v)))
+    .subscribe(novoValor => this.valor = novoValor);
   }
 
+  ngOnDestroy(){
+    console.log(`${this.nome} foi destruído`);
+  }
 }
