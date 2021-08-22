@@ -7,6 +7,22 @@
     {
       "id": 2,
       "nome": "Java"
+    },
+    {
+      "nome": "Angular Material",
+      "id": 3
+    },
+    {
+      "nome": "Python",
+      "id": 4
+    },
+    {
+      "nome": "PO UI",
+      "id": 5
+    },
+    {
+      "nome": "JavaScript",
+      "id": 6
     }
   ]
 }

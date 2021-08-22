@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { CursosFormComponent } from './cursos-form/cursos-form.component';
 import { CursosListaComponent } from './cursos-lista/cursos-lista.component';
 
 const routes: Routes = [
@@ -9,6 +10,14 @@ const routes: Routes = [
   {
     path: 'rxjs-poc',
     loadChildren: './unsubscribe-rxjs/unsubscribe-rxjs.module#UnsubscribeRxjsModule'
+  },
+  { 
+    path: 'novo', 
+    component: CursosFormComponent
+  },
+  { 
+    path: 'editar/:id', 
+    component: CursosFormComponent
   }
 ];
 
