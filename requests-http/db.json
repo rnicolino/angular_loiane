@@ -2,7 +2,7 @@
   "cursos": [
     {
       "id": 1,
-      "nome": "Angular"
+      "nome": "Angular  2"
     },
     {
       "id": 2,
@@ -23,6 +23,14 @@
     {
       "nome": "JavaScript",
       "id": 6
+    },
+    {
+      "id": 7,
+      "nome": "ADVPL 2"
+    },
+    {
+      "id": 8,
+      "nome": "Ruby"
     }
   ]
 }
