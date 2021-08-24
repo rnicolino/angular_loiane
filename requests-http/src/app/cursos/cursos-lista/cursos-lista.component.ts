@@ -7,6 +7,7 @@ import { AlertModalComponent } from 'src/app/shared/alert-modal/alert-modal.comp
 import { AlertModalService } from 'src/app/shared/alert-modal.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
+import { Cursos2Service } from '../cursos2.service';
 
 
 @Component({
@@ -28,7 +29,8 @@ export class CursosListaComponent implements OnInit {
 
   cursoSelecionado!: Curso;
 
-  constructor(private service: CursosService,
+  constructor(
+    private service: Cursos2Service,
     private modalService: BsModalService,
     private alertService: AlertModalService,
     private router: Router,

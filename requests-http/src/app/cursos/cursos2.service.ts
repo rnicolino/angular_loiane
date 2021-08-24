@@ -7,7 +7,7 @@ import { Curso } from './curso';
 @Injectable({
   providedIn: 'root'
 })
-export class Curso2Service extends CrudService<Curso>{
+export class Cursos2Service extends CrudService<Curso>{
 
   constructor(protected http: HttpClient) {
     super(http, `${environment.API}cursos`);
